@@ -1,27 +1,16 @@
-## Medical Brain: Automated Technical Log Analysis
-Medical Brain is an intelligent data pipeline designed to transform unstructured medical equipment service reports into a structured, searchable knowledge base. By leveraging Natural Language Processing (NLP), this project automates the extraction of critical technical data from engineer logs, helping maintenance teams track machine history and optimize repair workflows.
+# React + Vite
 
-### Key Features
-Automated Information Extraction: Parses complex, free-text descriptions from engineers to identify specific machine faults, parts replaced, and actions taken.
-Structured Storage: Converts raw text logs into a normalized SQLite database for high-performance querying and historical analysis.
-Summarization Engine: Generates concise technical summaries of lengthy repair histories, allowing junior engineers to understand a machine's "medical record" at a glance.
-Local-First Design: Built with a focus on data privacy, ensuring that sensitive maintenance logs are processed efficiently without mandatory reliance on external cloud APIs.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Tech Stack
-Language: Python
-Data Processing: Pandas, Regex
-Database: SQLite / SQLAlchemy
-AI Frameworks: LangChain, CrewAI
-Models: Integrated with local LLMs (via Ollama) for privacy-centric text reasoning.
+Currently, two official plugins are available:
 
-### Project Structure
-data_ingestion/: Scripts for loading raw machine logs (CSV/Excel/Text).
-processing_pipeline/: Core logic for cleaning and extracting technical entities.
-database/: Schema definitions and migration scripts for the SQLite backend.
-models/: Prompt templates and local model configurations for summarization.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### How It Works
-Ingest: Raw service reports are fed into the system.
-Analyze: The pipeline identifies technical keywords (e.g., "Error 404," "Sensor Replacement," "Calibration").
-Structure: Extracted data is mapped to specific fields: Machine_ID, Fault_Type, Resolution, and Date.
-Query: Users can search the database to find patterns in equipment failure across multiple hospital sites.
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
