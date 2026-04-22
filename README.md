@@ -1,4 +1,4 @@
-##Medical Brain: Automated Technical Log Analysis
+## Medical Brain: Automated Technical Log Analysis
 Medical Brain is an intelligent data pipeline designed to transform unstructured medical equipment service reports into a structured, searchable knowledge base. By leveraging Natural Language Processing (NLP), this project automates the extraction of critical technical data from engineer logs, helping maintenance teams track machine history and optimize repair workflows.
 
 ### Key Features
